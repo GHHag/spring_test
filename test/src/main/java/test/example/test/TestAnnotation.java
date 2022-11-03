@@ -1,0 +1,3 @@
+// public @Annotation interface TestAnnotation {
+
+// }
