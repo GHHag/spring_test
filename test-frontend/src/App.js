@@ -77,7 +77,7 @@ function App() {
     getTest();
     //endpointCReq();
     //endpointD2Req();
-    //endpointEReq();
+    endpointEReq();
   }, [])
 
 
@@ -86,7 +86,7 @@ function App() {
       <h1>{test}</h1>
       <header className="App-header">
         <div>
-          <button onClick={superHeroes.length < 1 ? getSuperHeroesReq() : setSuperHeroes([])}>SuperhjÖltar</button>
+          <button onClick={() => getSuperHeroesReq()}>SuperhjÖltar</button>
           {
             superHeroes.map((x, id) => (
               <div key={id}>

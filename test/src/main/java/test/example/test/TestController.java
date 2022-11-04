@@ -73,8 +73,9 @@ public class TestController {
     @PostMapping("/e")
     @CrossOrigin("*")
     public void endpointE(@RequestBody Map<String, String> body) {
-        // int x = 0;
-        // body.keySet().forEach(x -> System.out.println(x));
-        body.keySet().forEach(i -> System.out.println(i.length()));
+        int length = 0;
+        for (Map.Entry<String, String> entry : body.entrySet())
+            length += entry.getValue().length();
+        System.out.println(length);
     }
 }
